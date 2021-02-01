@@ -4,10 +4,11 @@ body{
     background: #ccc;
 }
 
+/*right left*/
 .nav ul {
     list-style: none;
     background-color: #444;
-    text-align: center;
+    text-align: right;
     margin: 0;
     padding: 0
 }
@@ -45,7 +46,7 @@ body{
 
 @media screen and (min-width: 650px){
     .nav li{
-        width: 130px;
+        width: 180px;
         border-bottom: none;
         height: 50px;
         line-height: 50px;
@@ -80,4 +81,22 @@ body{
     .nav li ul li {
         display: block;
     }
+
+}
+
+.test{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.user {
+    margin-top: 20px;
+}
+
+
+.su2{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }

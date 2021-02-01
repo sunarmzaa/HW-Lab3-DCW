@@ -6,36 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    
+
 </head>
 
 <body>
     <header>
         <div class="nav">
             <ul>
-                <li class="home"><a href="#">Home</a></li>
-                <li class="tutorials"><a href="#">Tutorial</a>
+                <li class="home"><a href="#">หน้าแรก</a></li>
+                <li class="tutorials"><a href="surat.html">ประวัติความเป็นมา</a>
                     <ul>
-                        <li><a href="#">Tutorials #1</a></li>
-                        <li><a href="#">Tutorials #2</a></li>
-                        <li><a href="#">Tutorials #3</a></li>
+                        <li><a href="surat1.html">สถานที่ท่องเที่ยว</a></li>
+                        <li><a href="surat2.html">คำขวัญประจำจังหวัด</a></li>
+                        <li><a href="surat3.html">ดอกไม้ประจำจังหวัด</a></li>
                     </ul>
                 </li>
-                <li class="about"><a class="active" href="about.html">About</a></li>
-                <li class="news"><a href="#">Newsletter</a>
+                <li class="about"><a class="active" href="about.html">เกี่ยวกับ</a></li>
+
+                <!--       <li class="news"><a href="#">Newsletter</a>
                     <ul>
                         <li><a href="#">News #1</a></li>
                         <li><a href="#">News #2</a></li>
                         <li><a href="#">News #3</a></li>
                     </ul>
                 </li>
-                <li class="context"><a href="about.html">Contact</a></li>
+-->
+                <li class="context"><a href="cat.html">Contact</a></li>
             </ul>
         </div>
     </header>>
-
+    <!--
     <h1>ยินต้อนรับ index</h1>
     <a href="page2.html">This is link...</a>
+-->
+
+    <div class="container" style="text-align: center">
+        <div class="user"><img src="image/user.png" alt="user"></div><br />
+        <from action="#">
+            <div class="title">
+                <h1>Login</h1> <br>
+            </div>
+            <div class="from">
+                <input id="p1" type="text" name="username" placeholder="Username"><br /><br />
+                <input id="p2" type="pasword" name="password" placeholder="Password"><br /></br>
+            </div>
+
+            <div id="p3" class="signin_button">
+                <button onclick="send()">Sign in</button>
+            </div>
+
+        </from>
+
+    </div>
+
+    <script>
+        const send = () => {
+            var user = document.getElementById("p1").value;
+            var pass = document.getElementById("p2").value;
+
+
+            if (user === "arm" && pass === "arm") {
+                console.log("correct")
+                alert("Correct")
+            }
+            else {
+                console.log("Incorrect")
+                alert("Incorrect")
+            }
+        }
+
+    </script>
+
 
 </body>
 
