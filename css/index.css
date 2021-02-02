@@ -101,8 +101,14 @@ body{
     margin-right: 50px;
 }
 
+.one{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .image{
-    width: 600px;
+    width: 500px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
